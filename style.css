@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  #quiz {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    text-align: left;
+  }
+  
+  button {
+    background-color: lightgray;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    grid-column: 1 / -1; /* Ensures the button takes up full width */
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  #score {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
